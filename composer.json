@@ -17,7 +17,7 @@
     "require-dev" : {
     },
     "autoload": {
-        "files": ["src/Log_Autoload.php"],
+        "files": ["Log_Autoload.php"],
         "psr-4": {
         }
     }
