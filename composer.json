@@ -1,0 +1,24 @@
+{
+    "name": "chinayin/sls-sdk-php",
+    "description": "Aliyun SLS SDK for PHP",
+    "keywords": ["aliyun", "sls", "log"],
+    "homepage": "http://www.aliyun.com/product/sls/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aliyuncs",
+            "homepage": "http://www.aliyun.com"
+        }
+    ],
+    "require": {
+        "php":">=5.2",
+    },
+    "require-dev" : {
+    },
+    "autoload": {
+        "files": ["src/Log_Autoload.php"],
+        "psr-4": {
+        }
+    }
+}
