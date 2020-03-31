@@ -1,37 +1,31 @@
-﻿# 阿里云日志服务PHP SDK
+﻿# Aliyun Log Service PHP SDK
 
-## 版本
+## API VERSION
 
-0.6.0
+0.6.1
 
-## 发布时间
+## SDK RELEASE TIME
 
-2015-11-16
+2018-02-18
 
-## 基本介绍：
+## Introduction
 
-这是Log Service SDK for PHP 的第一个对外发布版本。Log Service SDK for PHP是阿里云日志服务
-（Log Service）API的PHP编程接口，提供了对于Log Service Rest API所有接口的封装
-和支持，帮助PHP开发人员更快编程使用阿里云Log Service服务。
+Log Service SDK for PHP，used to set/get log data to Aliyun Log Service(www.aliyun.com/product/sls).
 
-### 具体功能：
+API Reference: [中文](https://help.aliyun.com/document_detail/29007.html) [ENGLISH](https://www.alibabacloud.com/help/doc-detail/29007.htm)
 
-1. 通过Request-Response风格的接口封装Rest API。
-2. 实现API请求的数字签名
-3. 实现API的Protocol Buffer格式发送日志
-4. 支持API定义的数据压缩方式
-5. 使用PHP异常统一处理错误
 
-## 环境要求：
+### Summary
 
-1. PHP 5.2.1及其以后版本
+1. Request-Request style Restful API interface
+2. Use Protocol buffer to send data 
+3. Data can be compressed when sending to server
+4. Aliyun_Log_Exception will be thrown if any error happen
+5. Introduce simple logger for submit log easily with different levels
+6. Create local log cache to submit several logs in single http post.
 
-## 支持API版本：
+## Environment Requirement
 
-1. Log Service API 0.6.0
+1. PHP 7.1.7 and later：Master Branch
+2. PHP 5.2+：[Tree v1.0](https://github.com/aliyun/aliyun-log-php-sdk/tree/v1.0)
 
-## 其他资源：
-
-1. 日志服务产品介绍：http://www.aliyun.com/product/sls/
-2. 日志服务产品文档：http://docs.aliyun.com/#/sls
-3. 其他问题请提工单

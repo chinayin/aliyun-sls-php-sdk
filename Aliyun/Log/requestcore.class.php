@@ -610,8 +610,8 @@ class RequestCore
 		curl_setopt($curl_handle, CURLOPT_MAXREDIRS, 5);
 		curl_setopt($curl_handle, CURLOPT_HEADER, true);
 		curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($curl_handle, CURLOPT_TIMEOUT, 5184000);
-		curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 120);
+		curl_setopt($curl_handle, CURLOPT_TIMEOUT, 50);
+		curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 50);
 		curl_setopt($curl_handle, CURLOPT_NOSIGNAL, true);
 		curl_setopt($curl_handle, CURLOPT_REFERER, $this->request_url);
 		curl_setopt($curl_handle, CURLOPT_USERAGENT, $this->useragent);
@@ -793,7 +793,7 @@ class RequestCore
 			$this->response_headers['_info'] = $this->response_info;
 			$this->response_headers['_info']['method'] = $this->method;
 
-			if ($curl_handle && $this->$response)
+			if ($curl_handle && $this->response)
 			{
 				return new $this->response_class($this->response_headers, $this->response_body, $this->response_code, $curl_handle);
 			}
